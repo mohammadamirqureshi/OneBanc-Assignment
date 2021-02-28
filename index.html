@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OneBanc</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="wrap">
+	<div id="wrap1">
+		<div id="logo">
+			<img id="logoimg" src="logo_onebanc.png">
+		</div>
+		<div id="content1">
+			<h1>Re: </br>Think</br>
+     <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Cards", "Payments", "Loan", "Support", "Rewards", "Savings", "Investments", "Forex", "Analytics" ]'></span>
+</h1>
+		</div>
+		<div id="content2">We are a Neo Bank and are here to re-imagine and re-invent Banking. We are cool and simply awesome!
+</div>
+		 <div id="search" class="search">
+            <input type="text" class="searchTerm" id="searchInput" placeholder="Enter Email Address">
+            <button type="submit" id="submit" class="searchButton">
+                <i class="fas fa-angle-double-right" style="color: white;"></i>
+            </button>
+        </div>
+		<div id="qrlogo">
+			<img id="qrlogoimg" src="qr_code.png">
+		</div>
+	</div>
+	<div id="wrap2">
+		<img class="mySlides" src="cards2.jpg">
+		<img class="mySlides" src="payments2.jpg">
+		<img class="mySlides" src="loan2.jpg">
+		<img class="mySlides" src="support2.jpg">
+		<img class="mySlides" src="rewards2.jpg">
+        <img class="mySlides" src="saving2.jpg">
+        <img class="mySlides" src="investment2.jpg">
+        <img class="mySlides" src="forex2.jpg">
+        <img class="mySlides" src="analytics.jpg">
+		
+	</div>
+
+	<div id="small">
+		<img class="mySlides2" src="cards4.jpg">
+		<img class="mySlides2" src="payments4.jpg">
+		<img class="mySlides2" src="loan4.jpg">
+		<img class="mySlides2" src="support4.jpg">
+		<img class="mySlides2" src="rewards4.jpg">
+        <img class="mySlides2" src="saving4.jpg">
+        <img class="mySlides2" src="investment4.jpg">
+        <img class="mySlides2" src="forex4.jpg">
+        <img class="mySlides2" src="analytics4.jpg">
+	</div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4500); // Change image every 4.5 seconds
+}
+
+var myIndex2 = 0;
+carousel2();
+
+function carousel2() {
+  var i2;
+  var x2 = document.getElementsByClassName("mySlides2");
+  for (i2 = 0; i2 < x2.length; i2++) {
+    x2[i2].style.display = "none";  
+  }
+  myIndex2++;
+  if (myIndex2 > x2.length) {myIndex2 = 1}    
+  x2[myIndex2-1].style.display = "block";  
+  setTimeout(carousel2, 4500); // Change image every 4.5 seconds
+}
+</script>
+<script src="https://kit.fontawesome.com/25735d6ab3.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
